@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 # Configures the app to use graphene
 GRAPHENE = {
-    'SCHEMA' = 'app.schema.schema'
+    'SCHEMA': 'app.schema.schema',
 }
 
 MIDDLEWARE = [

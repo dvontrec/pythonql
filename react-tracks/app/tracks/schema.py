@@ -1,11 +1,11 @@
 import graphene
+from graphene_django import DjangoObjectType
 # tells graphene django about the track model
 from .models import Track
-from graphene_django import DjangoObjectType
 
 
 class TrackType(DjangoObjectType):
-    class meta:
+    class Meta:
         model = Track
 
 
