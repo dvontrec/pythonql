@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Adds the tracks app to be an installed app
+    'tracks',
 ]
 
 MIDDLEWARE = [
