@@ -37,9 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # adds graphene_django to the app
+    'graphene_django',
     # Adds the tracks app to be an installed app
     'tracks',
 ]
+
+# Configures the app to use graphene
+GRAPHENE = {
+    'SCHEMA' = 'app.schema.schema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
