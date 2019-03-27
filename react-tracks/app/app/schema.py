@@ -7,5 +7,10 @@ class Query(tracks.schema.Query, graphene.ObjectType):
     pass
 
 
+# root Mutation
+class Mutation(tracks.schema.Mutation, graphene.ObjectType):
+    pass
+
+
 # creates a schema
-schema = graphene.Schema(query=Query)
+schema = graphene.Schema(query=Query, mutation=Mutation)
