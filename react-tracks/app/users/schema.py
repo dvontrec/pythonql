@@ -32,6 +32,7 @@ class CreateUser(graphene.Mutation):
         user.set_password(password)
         # saves the user
         user.save()
+        return CreateUser(user=user)
 
 
 class Mutation(graphene.ObjectType):
